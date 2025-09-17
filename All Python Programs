@@ -1,0 +1,263 @@
+#printing
+print("Naga Srinivas")
+
+#print your name
+name= input("enter your name: ")
+print(name)
+
+#print two numbers
+num1=input("enter uour 1st number:")
+num2=input("enter our 2nd no.:")
+print(num1)
+print(num2)
+
+#addition of two numbers
+num1=int(input("enter first no.:"))
+num2=int(input("enter 2nd no.:"))
+add= num1+num2
+print("addition of two numbers", add)
+
+#concatinate first and last names
+first_name=input("enter first name:")
+last_name=input("enter last name:")
+full_name= first_name+last_name
+print(full_name)
+
+#swap two numebrs wtihout 3rd variable
+a=int(input("enter 1st no. "))
+b=int(input("enter 2nd no."))
+a=a+b
+b=a-b
+a=a-b
+print(a)
+print(b)
+
+#swap 2 numbers using 3rd variable
+a=int(input("1st no. :"))
+b=int(input("enter 2nd no. :"))
+temp=a
+a=b
+b=temp
+print(a)
+print(b)
+
+#primitive datatypes( int, floating, boolean)
+a=int(input("1st no. :"))
+b=float(input("2nd no. :"))
+c=False
+print(a)
+print(b)
+print(c)
+print(type(a))
+print(type(b))
+print(type(c))
+
+# tuple, list, set, dictionary
+a=(10,20,30)
+b=[40,50,60]
+c={12,25,41}
+dic={'name': 'srinu','age':'teenage'}
+print(a)
+print(b)
+print(c)
+print(dic)
+
+#square of a number
+x=int(input("enter a number: "))
+print(x**2)
+
+#average of 3 numbers
+a= int(input("enter a number: "))
+b= int(input("enter a number: "))
+c= int(input("enter a number: "))
+avg=(a+b+c)/3
+print(avg)
+
+#multiply a number by 10
+a=int(input("enter a number: "))
+b=a*10
+print(b)
+
+#convert mins to secs
+mins = int(input("enter mins: "))
+sec = mins*60
+print(sec)
+
+#multiplication of two floating numbers
+a=float(input("enter 1st no.: "))
+b=float(input("enter 2nd no.: "))
+c=a*b
+print(c)
+
+#maximum of two numbers
+x=10
+y=20
+z=30
+large=max(x,y,z)
+print(large)
+
+#sum of first even and odd numbers
+n=int(input("enter a number: "))
+even=n*(n+1)
+odd=n**2
+print(even)
+print(odd)
+
+#arithmetic operators
+a=10
+b=20
+print("addition: ",a+b)
+print("subtraction: ",a-b)
+print("multiplication: ",a*b)
+print("division: ",a/b)
+
+# logical operators
+a=10
+b=11
+print(a>5 and b>10)
+print(a>15 or b<15)
+print(not(a==10))
+
+# +ve, -ve, zero
+a=int(input('enter a number: '))
+if(a>0):
+    print("positive")
+elif(a<0):
+    print("negative")
+else:
+    print("zero")
+
+#even or odd numbers
+a=int(input("enter a no. :"))
+if(a%2==0):
+    print("even no. ")
+else:
+    print("odd no. ")
+
+#to check if the number is divisible by 5 &11
+a=int(input("enter a number: "))
+if(a%5==0 and a%11==0):
+    print("number is divisible by both 5 & 11")
+else:
+    print("number will not divivsible by 5 & 11")
+
+# ATM CARD 
+ATM_card=input(" ")
+Pin= input(" password: ")
+status = input(" ")
+if(ATM_card == "inserted" and Pin== "PASS" and status=="not locked"):
+    print("access granted")
+else:
+    print("access denied")
+
+#student pass in an exam
+theory=int(input())
+practical=int(input())
+total= int(input())
+if(theory>=35 and practical>=50 and total>=60):
+    print("PASS")
+else:
+    print("FAIL")
+
+#check age group
+age=int(input("enter your age: "))
+if(age<=12):
+    print("he is child")
+elif(age>12 and age<=19):
+    print("he is teenager")
+else:
+    print("he is adult")
+
+#to check grade using marks
+marks=int(input("enter marks: "))
+if(marks>=90):
+    print("A-grade")
+    print("excellent")
+elif(marks<=89 or marks>70):
+    print("B-grade")
+    print("best")
+elif(marks>50 or marks<=70):
+    print("C-grade")
+    print("good")
+elif(marks>40 or marks<=50):
+    print("D-grade")
+    print("need improvement")
+elif(marks<40):
+    print("FAIL")
+else:
+    print("error")
+
+#to check week of a day
+day = int(input("enter day: "))
+if(day==1):
+    print("sunday")
+elif(day==2):
+    print("monday")
+elif(day==3):
+    print("tuesday")
+elif(day==4):
+    print("wednesday")
+elif(day==5):
+    print("thursday")
+elif(day==6):
+    print("friday")
+elif(day==7):
+    print("saturday")
+else:
+    print("error")
+
+#to check username and password
+username=input("enter username: ")
+Pass=int(input("enter password: "))
+if(username=='Srinu' and Pass== 12345):
+    print("login successful")
+else:
+    print("wrong credentials")
+
+# develop a simple calculator
+a=int(input("enter 1st no.: "))
+b=int(input("enter 2nd no.: "))
+operation=input("enter operation: ")
+if(operation=="add"):
+    print(a+b)
+elif(operation=="subtract"):
+    print(a-b)
+elif(operation=='multiply'):
+    print(a*b)
+elif(operation=='division'):
+    print(a/b)
+elif( operation=='mod div'):
+    print(a%b)
+else:
+    print('error')
+
+#to check the month days 
+num = int(input("enter month: "))
+if(num==1,3,5,7,8,10,12):
+    print("31 days")
+elif(num == 2):
+    print("28 or 29 days")
+elif(num == 4,6,9,11):
+    print("30 days")
+else:
+    print("error")
+
+#to check body temperature 
+temp=float(input("enter temperature: "))
+if(temp==37):
+    print("body temperature is normal")
+elif(temp>37):
+    print("fever")
+else:
+    print("Cold")
+
+# sum of all cubes from m to n numbers
+m=int(input("enter m no.: "))
+n=int(input("enter n no.: "))
+if(m>n):
+    return0
+else:
+    sum=0
+    for i in range(m,n+1):
+        sum+= i**3
+    print(sum)
