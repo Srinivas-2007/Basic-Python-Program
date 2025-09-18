@@ -1,0 +1,68 @@
+# Restuarant Bill
+
+print(" welcome to dosth restaurant ")
+print("Menu: ")
+print("1.Tiffin items: dosa, idly, vada ")
+print("2.Lunch meals: veg, non-veg ")
+print("3.Juice Items: mango, pineapple, orange ")
+print("4. Snacks: vge-puff, egg-puff, chicken-puff ")
+menu=int(input("choose menu: "))
+items=int(input("enter no.of items you want: "))
+if (menu==1):
+    print("Tiffin Items: ",items)
+    tiffin=int(input("enter tiffin item: "))
+    if(tiffin==1):
+        print("DOSA")
+        price= items*30
+        print("price of dosa: ",price)
+    elif(tiffin==2):
+        print("IDLY")
+        price=items*30
+        print("Price of IDLY: ",price)
+    elif(tiffin==3):
+        print("VADA")
+        price=items*30
+        print("price of vada: ",price)
+if(menu==2):
+    print("Lunch Meals: ",items)
+    lunch=int(input("enter lunch meals: "))
+    if(lunch==1):
+        print("VEG-meals")
+        price= items*70
+        print("price of veg-meals: ",price)
+    elif(lunch==2):
+        print("NON-VEG-Meals")
+        price=items*120
+        print("Price of Non-Veg-Meals: ",price)
+if(menu==3):
+    print("juice items: ",items)
+    juice=int(input("enter juice item: "))
+    if(juice==1):
+        print("MANGO")
+        price= items*50
+        print("price of mango-juice: ",price)
+    elif(juice==2):
+        print("PINEAPPLE")
+        price=items*40
+        print("Price of pineapple-juice: ",price)
+    elif(juice==3):
+        print("ORANGE")
+        price=items*30
+        print("price of orange-juice: ",price)
+if(menu==4):
+    print("Snacks: ",items)
+    snacks=int(input("enter tiffin item: "))
+    if(snacks==1):
+        print("VEG-puff")
+        price= items*20
+        print("price of veg-puff: ",price)
+    elif(snacks==2):
+        print("egg-puff")
+        price=items*30
+        print("Price of egg-puff: ",price)
+    elif(chicken-puff==3):
+        print("chicken-puff")
+        price=items*40
+        print("price of chicken-puff: ",price)
+    else:
+        print("choose valid menu")
