@@ -1,0 +1,11 @@
+# Linear Search 
+
+arr=[10,5,3,6,1,8]
+def linear_search(arr,target):
+    for i in range(len(arr)):
+        if(arr[i]==target):
+            print("target found at index", i)
+            return i
+    print("not found")
+    return -1
+linear_search(arr,8)
